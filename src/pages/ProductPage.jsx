@@ -55,7 +55,7 @@ export default function ProductPage() {
                         </p>
 
                         <div className="mt-8">
-                            <h2 className="text-xl font-semibold">What it includes</h2>
+                            <h2 className="text-xl font-semibold">Details</h2>
                             <ul className="mt-4 space-y-3 text-white/75">
                                 {product.details.map((detail) => (
                                     <li key={detail} className="flex items-start gap-3">

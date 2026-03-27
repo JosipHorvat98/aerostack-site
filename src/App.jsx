@@ -1,90 +1,8 @@
-﻿export default function App() {
-    const products = [
-        {
-            slug: "aerostack-pinnacle",
-            name: "AeroStack Pinnacle",
-            subtitle: "Full aero system – 105 mm total stack",
-            description: "Most advanced full setup.",
-            details: [
-                "105 mm total stack",
-                "Forward reach adjustment",
-                "Optimized wrist angle",
-                "Built for Ironman"
-            ],
-            price: "330 EUR"
-        },
-        {
-            slug: "aerostack-elite",
-            name: "AeroStack Elite",
-            subtitle: "Balanced setup – 85 mm total stack",
-            description: "Most practical and widely used setup.",
-            details: [
-                "85 mm total stack",
-                "Improved wrist angle",
-                "Better comfort",
-                "Real-world usability"
-            ],
-            price: "Coming soon"
-        },
+﻿import { Routes, Route, Link } from "react-router-dom";
+import { products } from "./data/products";
+import ProductPage from "./pages/ProductPage";
 
-        {
-            slug: "aerostack-riser-kit",
-            name: "AeroStack Riser Kit",
-            subtitle: "30 mm + 20 mm stack risers",
-            description: "Precision-machined aluminium risers developed specifically for Canyon Gear Groove aero extensions.",
-            details: [
-                "CNC-machined aluminium",
-                "Works with original Canyon spacers",
-                "High-strength bolts included",
-                "Built for real-world riding"
-            ],
-            price: "199 EUR"
-        },
-        {
-            slug: "aerostack-tilt",
-            name: "AeroStack Tilt",
-            subtitle: "15 degree angled spacer",
-            description: "Focused on wrist comfort and improved hand position.",
-            details: [
-                "15 degree tilt",
-                "Clean cockpit integration",
-                "Comfort-focused geometry",
-                "Small-batch production"
-            ],
-            price: "Coming soon"
-        },
-        {
-            slug: "aerostack-reach",
-            name: "AeroStack Reach",
-            subtitle: "15 degree tilt + 20 mm stack + 30 mm reach",
-            description: "For riders needing both additional height and forward position.",
-            details: [
-                "15 degree tilt",
-                "+20 mm stack",
-                "+30 mm reach",
-                "Purpose-built geometry"
-            ],
-            price: "Coming soon"
-        }
-    ];
-
-    const testimonials = [
-        {
-            quote:
-                "Finally enough stack to make the aero position usable for longer rides.",
-            source: "Rider feedback",
-        },
-        {
-            quote: "Exactly the missing piece for my Aeroad setup.",
-            source: "Rider feedback",
-        },
-        {
-            quote:
-                "The real gain was being able to stay aero comfortably, not just adding height.",
-            source: "Long-course rider",
-        },
-    ];
-
+function HomePage() {
     return (
         <div className="min-h-screen bg-neutral-950 text-white">
             <header className="sticky top-0 z-30 border-b border-white/10 bg-neutral-950/85 backdrop-blur">
@@ -123,8 +41,7 @@
                                 Increase stack height and make your aero position actually usable.
                             </h1>
                             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/75">
-                                Developed during real Ironman preparation, AeroStack components solve one of the
-                                most common limitations of the Canyon Gear Groove aero extension system.
+                                Developed during real Ironman preparation, AeroStack components solve one of the most common limitations of the Canyon Gear Groove aero extension system.
                             </p>
                         </div>
 
@@ -153,8 +70,7 @@
                                             </div>
                                         </div>
                                         <div className="rounded-[1.5rem] border border-sky-400/20 bg-sky-400/10 p-4 text-sm text-sky-100">
-                                            The biggest difference was not just more height. It was finally being able to
-                                            stay aero comfortably for long periods.
+                                            The biggest difference was not just more height. It was finally being able to stay aero comfortably for long periods.
                                         </div>
                                     </div>
                                 </div>
@@ -174,9 +90,10 @@
 
                         <div className="mt-12 grid gap-6 lg:grid-cols-3">
                             {products.map((product) => (
-                                <div
-                                    key={product.name}
-                                    className="rounded-[2rem] border border-white/10 bg-white/5 p-6"
+                                <Link
+                                    key={product.slug}
+                                    to={`/products/${product.slug}`}
+                                    className="rounded-[2rem] border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:border-sky-400/40 hover:bg-white/10"
                                 >
                                     <div className="flex items-start justify-between gap-4">
                                         <div>
@@ -187,76 +104,21 @@
                                             {product.price}
                                         </span>
                                     </div>
-                                    <p className="mt-5 text-base leading-7 text-white/70">{product.description}</p>
+
+                                    <p className="mt-5 text-base leading-7 text-white/70">
+                                        {product.description}
+                                    </p>
+
                                     <ul className="mt-6 space-y-3 text-sm text-white/75">
-                                        {product.details.map((detail) => (
+                                        {product.details.slice(0, 4).map((detail) => (
                                             <li key={detail} className="flex items-center gap-3">
                                                 <span className="h-1.5 w-1.5 rounded-full bg-sky-400" />
                                                 <span>{detail}</span>
                                             </li>
                                         ))}
                                     </ul>
-                                </div>
+                                </Link>
                             ))}
-                        </div>
-                    </div>
-                </section>
-
-                <section id="reviews" className="border-t border-white/10 bg-neutral-900">
-                    <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
-                        <div className="max-w-3xl">
-                            <p className="text-sm uppercase tracking-[0.2em] text-sky-300">Feedback</p>
-                            <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-                                What riders keep coming back to is finally being able to stay aero comfortably.
-                            </h2>
-                        </div>
-                        <div className="mt-12 grid gap-6 md:grid-cols-3">
-                            {testimonials.map((item) => (
-                                <div
-                                    key={item.quote}
-                                    className="rounded-[2rem] border border-white/10 bg-white/5 p-6"
-                                >
-                                    <p className="text-lg leading-8 text-white/85">"{item.quote}"</p>
-                                    <p className="mt-4 text-sm text-sky-300">{item.source}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
-                <section id="order" className="border-t border-white/10">
-                    <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[1fr_0.9fr] lg:px-10">
-                        <div>
-                            <p className="text-sm uppercase tracking-[0.2em] text-sky-300">Order / Contact</p>
-                            <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-                                Tell us your current setup and what you are trying to achieve.
-                            </h2>
-                            <p className="mt-5 max-w-2xl text-lg leading-8 text-white/75">
-                                The easiest way to start is by sharing your current Gear Groove
-                                configuration, how much extra stack you think you need, and
-                                whether you also want tilt or reach.
-                            </p>
-                        </div>
-                        <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6">
-                            <div className="space-y-5 text-base text-white/80">
-                                <div>
-                                    <div className="text-sm text-white/45">Email</div>
-                                    <div className="mt-1 text-lg font-medium">contact@aerostacklabs.com</div>
-                                </div>
-                                <div>
-                                    <div className="text-sm text-white/45">Typical info to include</div>
-                                    <ul className="mt-3 space-y-2 text-white/70">
-                                        <li>Current setup / spacers in use</li>
-                                        <li>Target stack increase</li>
-                                        <li>Country for shipping</li>
-                                        <li>Whether you also need tilt or reach</li>
-                                    </ul>
-                                </div>
-                                <div className="rounded-[1.5rem] border border-sky-400/20 bg-sky-400/10 p-4 text-sm text-sky-100">
-                                    Small-batch production. EU shipping available. Built from one triathlete problem,
-                                    now helping other riders solve the same one.
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </section>
@@ -269,5 +131,14 @@
                 </div>
             </footer>
         </div>
+    );
+}
+
+export default function App() {
+    return (
+        <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/products/:slug" element={<ProductPage />} />
+        </Routes>
     );
 }

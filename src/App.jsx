@@ -27,29 +27,43 @@
             price: "Coming soon"
         },
 
-        // postojeći proizvodi dolje
         {
             slug: "aerostack-riser-kit",
             name: "AeroStack Riser Kit",
             subtitle: "30 mm + 20 mm stack risers",
-            description: "...",
-            details: [...],
+            description: "Precision-machined aluminium risers developed specifically for Canyon Gear Groove aero extensions.",
+            details: [
+                "CNC-machined aluminium",
+                "Works with original Canyon spacers",
+                "High-strength bolts included",
+                "Built for real-world riding"
+            ],
             price: "199 EUR"
         },
         {
             slug: "aerostack-tilt",
             name: "AeroStack Tilt",
             subtitle: "15 degree angled spacer",
-            description: "...",
-            details: [...],
+            description: "Focused on wrist comfort and improved hand position.",
+            details: [
+                "15 degree tilt",
+                "Clean cockpit integration",
+                "Comfort-focused geometry",
+                "Small-batch production"
+            ],
             price: "Coming soon"
         },
         {
             slug: "aerostack-reach",
             name: "AeroStack Reach",
             subtitle: "15 degree tilt + 20 mm stack + 30 mm reach",
-            description: "...",
-            details: [...],
+            description: "For riders needing both additional height and forward position.",
+            details: [
+                "15 degree tilt",
+                "+20 mm stack",
+                "+30 mm reach",
+                "Purpose-built geometry"
+            ],
             price: "Coming soon"
         }
     ];

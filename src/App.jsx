@@ -1,45 +1,58 @@
 export default function App() {
-  const products = [
-    {
-      name: "AeroStack Riser Kit",
-      subtitle: "30 mm + 20 mm stack risers",
-      description:
-        "Precision-machined aluminium risers developed specifically for Canyon Gear Groove aero extensions. Designed to make long aero efforts more sustainable.",
-      details: [
-        "CNC-machined aluminium",
-        "Works with original Canyon spacers",
-        "High-strength bolts included",
-        "Built for real-world riding",
-      ],
-      price: "199 EUR",
-    },
-    {
-      name: "AeroStack Tilt",
-      subtitle: "15 degree angled spacer",
-      description:
-        "An angled option focused on wrist comfort and hand position, for riders who want more tilt without changing the whole setup philosophy.",
-      details: [
-        "15 degree tilt",
-        "Clean cockpit integration",
-        "Comfort-focused geometry",
-        "Small-batch production",
-      ],
-      price: "Coming soon",
-    },
-    {
-      name: "AeroStack Reach",
-      subtitle: "15 degree tilt + 20 mm stack + 30 mm reach",
-      description:
-        "A more aggressive option for riders who need both additional height and a more forward aero position.",
-      details: [
-        "15 degree tilt",
-        "+20 mm stack",
-        "+30 mm reach",
-        "Purpose-built geometry",
-      ],
-      price: "Coming soon",
-    },
-  ];
+    const products = [
+        {
+            slug: "aerostack-pinnacle",
+            name: "AeroStack Pinnacle",
+            subtitle: "Full aero system – 105 mm total stack",
+            description: "Most advanced full setup.",
+            details: [
+                "105 mm total stack",
+                "Forward reach adjustment",
+                "Optimized wrist angle",
+                "Built for Ironman"
+            ],
+            price: "330 EUR"
+        },
+        {
+            slug: "aerostack-elite",
+            name: "AeroStack Elite",
+            subtitle: "Balanced setup – 85 mm total stack",
+            description: "Most practical and widely used setup.",
+            details: [
+                "85 mm total stack",
+                "Improved wrist angle",
+                "Better comfort",
+                "Real-world usability"
+            ],
+            price: "Coming soon"
+        },
+
+        
+        {
+            slug: "aerostack-riser-kit",
+            name: "AeroStack Riser Kit",
+            subtitle: "30 mm + 20 mm stack risers",
+            description: "...",
+            details: [...],
+            price: "199 EUR"
+        },
+        {
+            slug: "aerostack-tilt",
+            name: "AeroStack Tilt",
+            subtitle: "15 degree angled spacer",
+            description: "...",
+            details: [...],
+            price: "Coming soon"
+        },
+        {
+            slug: "aerostack-reach",
+            name: "AeroStack Reach",
+            subtitle: "15 degree tilt + 20 mm stack + 30 mm reach",
+            description: "...",
+            details: [...],
+            price: "Coming soon"
+        }
+    ];
 
   const testimonials = [
     {

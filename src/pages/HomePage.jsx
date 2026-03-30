@@ -1,6 +1,7 @@
 ﻿import {Link } from "react-router-dom";
 import { products } from "../data/products";
 import Navbar from "../components/Navbar";
+import heroImage from "../assets/hero.jpeg";
 
 
 export default function HomePage() {
@@ -31,34 +32,19 @@ export default function HomePage() {
                         </div>
 
                         <div className="relative z-10">
-                            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-5 shadow-2xl shadow-sky-950/30">
-                                <div className="aspect-[4/5] overflow-hidden rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 p-6">
-                                    <div className="flex h-full flex-col justify-between">
-                                        <div className="flex items-center justify-between text-xs uppercase tracking-[0.2em] text-white/40">
-                                            <span>AeroStack Labs</span>
-                                            <span>Gear Groove</span>
-                                        </div>
-                                        <div className="mx-auto w-full max-w-sm rounded-[2rem] border border-white/10 bg-neutral-900/80 p-5">
-                                            <div className="mb-5 flex items-center gap-3 text-sm text-white/60">
-                                                <div className="h-3 w-3 rounded-full bg-sky-400" />
-                                                Stack riser concept
-                                            </div>
-                                            <div className="space-y-3">
-                                                <div className="h-12 rounded-2xl bg-neutral-800" />
-                                                <div className="mx-auto h-24 w-20 rounded-[1.5rem] bg-gradient-to-b from-neutral-700 to-neutral-900" />
-                                                <div className="h-12 rounded-2xl bg-neutral-800" />
-                                            </div>
-                                            <div className="mt-6 grid grid-cols-3 gap-2 text-center text-xs text-white/55">
-                                                <div className="rounded-xl border border-white/10 bg-white/5 px-2 py-2">30 mm</div>
-                                                <div className="rounded-xl border border-white/10 bg-white/5 px-2 py-2">20 mm</div>
-                                                <div className="rounded-xl border border-white/10 bg-white/5 px-2 py-2">15 degree tilt</div>
-                                            </div>
-                                        </div>
-                                        <div className="rounded-[1.5rem] border border-sky-400/20 bg-sky-400/10 p-4 text-sm text-sky-100">
-                                            The biggest difference was not just more height. It was finally being able to stay aero comfortably for long periods.
-                                        </div>
-                                    </div>
+                            <div className="relative rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-2xl shadow-sky-950/30">
+
+                                {/* glow efekt */}
+                                <div className="absolute -inset-4 rounded-[2rem] bg-sky-500/10 blur-2xl" />
+
+                                <div className="relative overflow-hidden rounded-[1.5rem]">
+                                    <img
+                                        src={heroImage}
+                                        alt="Aero cockpit"
+                                        className="w-full h-full object-cover"
+                                    />
                                 </div>
+
                             </div>
                         </div>
                     </div>

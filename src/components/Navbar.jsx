@@ -31,6 +31,9 @@ export default function Navbar() {
                     <Link to="/contact" className="transition hover:text-sky-300">
                         Contact
                     </Link>
+                    <Link to="/faq" className="transition hover:text-sky-300">
+                        FAQ
+                    </Link>
                 </nav>
             </div>
         </header>

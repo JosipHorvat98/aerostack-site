@@ -145,13 +145,13 @@ export default function FaqPage() {
 
                     <div>
                         <h3 className="font-medium">
-                            Why are AeroStack spacers more expensive than basic spacers?
+                            What lies behind the price?
                         </h3>
                         <p className="mt-2 text-white/70">
-                            They are not just small adjustment parts. They are a complete solution to the stack limitation problem, developed through multiple prototypes and real-world testing.
+                            They are not just small adjustment parts. They are a unique, complete solution to the stack limitation problem, developed through multiple prototypes and real-world testing.
                         </p>
                         <p className="mt-2 text-white/70">
-                            Produced in small batches with precision machining and matched hardware — this is a functional, load-bearing component, not a generic spacer.
+                            Produced in small batches from high quality materials with precision machining and matched hardware — this is a functional, load-bearing component, not a generic spacer.
                         </p>
                     </div>
 

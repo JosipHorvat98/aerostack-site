@@ -6,11 +6,19 @@ export default function Navbar() {
         <header className="sticky top-0 z-30 border-b border-white/10 bg-neutral-950/85 backdrop-blur">
             <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
                 <Link to="/" className="flex items-center gap-3">
-                    <img
-                        src={logo}
-                        alt="AeroStack Labs"
-                        className="h-12 w-auto object-contain"
-                    />
+                    <div className="relative flex h-12 w-12 items-center justify-center">
+                        {/* glow */}
+                        <div className="absolute inset-0 rounded-xl bg-sky-400/20 blur-md" />
+
+                        {/* box */}
+                        <div className="relative flex h-full w-full items-center justify-center rounded-xl border border-white/10 bg-neutral-800/80">
+                            <img
+                                src={logo}
+                                alt="AeroStack Labs"
+                                className="h-8 w-auto object-contain brightness-110 contrast-110"
+                            />
+                        </div>
+                    </div>
 
                     <div>
                         <div className="text-lg font-semibold tracking-tight text-white">

@@ -2,6 +2,7 @@
 export default function FaqPage() {
     return (
         <div className="min-h-screen bg-neutral-950 text-white px-6 py-20">
+            <Navbar/>
             <div className="mx-auto max-w-4xl">
                 <h1 className="text-4xl font-semibold tracking-tight">FAQ</h1>
 

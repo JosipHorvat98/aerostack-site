@@ -1,4 +1,5 @@
-﻿export default function FaqPage() {
+﻿import Navbar from "../components/Navbar";
+export default function FaqPage() {
     return (
         <div className="min-h-screen bg-neutral-950 text-white px-6 py-20">
             <div className="mx-auto max-w-4xl">

@@ -7,15 +7,13 @@ export default function Navbar() {
             <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
                 <Link to="/" className="flex items-center gap-3">
                     <div className="relative flex h-12 w-12 items-center justify-center">
-                        {/* glow */}
-                        <div className="absolute inset-0 rounded-xl bg-sky-400/20 blur-md" />
+                        <div className="absolute -inset-1 rounded-xl bg-gradient-to-br from-sky-400/30 to-blue-600/20 blur-md" />
 
-                        {/* box */}
-                        <div className="relative flex h-full w-full items-center justify-center rounded-xl border border-white/10 bg-neutral-800/80">
+                        <div className="relative flex h-full w-full items-center justify-center rounded-xl border border-white/10 bg-neutral-900/90">
                             <img
                                 src={logo}
                                 alt="AeroStack Labs"
-                                className="h-8 w-auto object-contain brightness-110 contrast-110"
+                                className="h-8 w-auto object-contain brightness-125 contrast-110"
                             />
                         </div>
                     </div>

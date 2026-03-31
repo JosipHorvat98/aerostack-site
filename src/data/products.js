@@ -3,8 +3,8 @@ export const products = [
         slug: "aerostack-pinnacle",
         name: "AeroStack Pinnacle",
         subtitle: "The pinnacle of your aero position",
-        price:"319",
-        oldprice: "340",
+        price:"319 EUR",
+        oldPrice: "340 EUR",
         image: "/images/pinnacle.jpg",
         description:
             "The AeroStack Pinnacle Kit is the most complete and advanced solution available for the Canyon Gear Groove aero extension. Designed for riders who want full control over their aero position without compromise.",

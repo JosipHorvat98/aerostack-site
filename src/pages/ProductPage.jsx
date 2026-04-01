@@ -24,22 +24,25 @@ export default function ProductPage() {
                 </Link>
 
                 <div className="grid gap-10 lg:grid-cols-2">
-                    <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5">
+                    <div>
                         <img
                             src={product.image}
                             alt={product.name}
-                            className="h-full w-full object-cover"
+                            className="w-full rounded-2xl border border-white/10"
                         />
-                        <div className="mt-4 grid grid-cols-2 gap-3">
-                            {product.gallery?.map((img, index) => (
-                                <img
-                                    key={index}
-                                    src={img}
-                                    alt=""
-                                    className="rounded-xl border border-white/10"
-                                />
-                            ))}
-                        </div>
+
+                        {product.gallery?.length > 1 && (
+                            <div className="mt-4 grid grid-cols-2 gap-3">
+                                {product.gallery.map((img, index) => (
+                                    <img
+                                        key={index}
+                                        src={img}
+                                        alt={`${product.name} ${index + 1}`}
+                                        className="rounded-xl border border-white/10"
+                                    />
+                                ))}
+                            </div>
+                        )}
                     </div>
 
                     <div>

@@ -4,21 +4,22 @@ export const products = [
         name: "AeroStack Pinnacle",
         subtitle: "The pinnacle of your aero position",
         price: "Coming soon",
-        oldPrice: "364 EUR",
+        oldPrice: "340 EUR",
         salePrice: "330 EUR",
+        image: "/images/pinnacle.jpg",
         description:
-            "The most complete and advanced solution for the Canyon Gear Groove aero extension. Built for full control without compromise.",
+            "The AeroStack Pinnacle Kit is the most complete and advanced solution available for the Canyon Gear Groove aero extension. Designed for riders who want full control over their aero position without compromise.",
         details: [
-            "Includes AeroStack Pro (30 + 20 mm)",
-            "Includes AeroStack Stack&Reach (15° tilt + 20 mm stack + 35 mm reach)",
+            "Includes AeroStack Pro(30 + 20 mm)",
+            "Includes AeroStack Stack & Reach(15 degree tilt + 20 mm stack + 35 mm reach)",
             "105 mm total stack",
-            "Full high strength bolt configuration",
+            "Full high strength bolt configuration(for 105 mm or 85 mm configuration) ",
             "Maximum stack height increase",
-            "Forward reach adjustment",
+            "Forward position adjustment",
             "Optimized wrist angle",
             "Stable and sustainable aero position",
-            "Built for long-course efforts",
-            "Developed and tested in real-world conditions"
+            "Built for longest efforts ",
+            "Crafted from premium aluminum, anodized"
         ]
     },
     {

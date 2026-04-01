@@ -91,19 +91,28 @@ export const products = [
         ]
     },
     {
-        slug: "aerostack-reach",
-        name: "AeroStack Reach",
-        subtitle: "15 degree tilt + 20 mm stack + 30 mm reach",
+        slug: "aerostack-stack-reach",
+        name: "AeroStack STACK&REACH",
+        subtitle: "15\u00B0 tilt + 20 mm stack + 30 mm reach",
         price: "Coming soon",
-        image: "/images/reach.jpg",
+        salePrice: "155 EUR",
+
         description:
-            "For riders needing both additional height and forward position.",
+            "The AeroStack Stack&Reach spacer allows opening of hip angle while maintaining a stable and aerodynamic upper body position.",
+
         details: [
-            "15 degree tilt",
-            "+20 mm stack",
-            "+30 mm reach",
-            "Purpose-built geometry"
-        ]
+            "15\u00B0 tilt",
+            "+ 20 mm stack",
+            "+ 30 mm reach",
+            "Comfort focused geometry",
+            "Clean cockpit integration",
+            "Crafted from premium aluminum, anodized"
+        ],
+
+        extraText:
+            "This spacer is especially useful for riders who feel too cramped or restricted in the standard Gear Groove setup, or who had to compensate by moving the saddle back. Instead of forcing compromises, it allows you to bring the front end into a more natural and powerful position.\n\nA single piece that helps to address three fit limitations at once.",
+
+       
     },
     {
         slug: "aerostack-basic",

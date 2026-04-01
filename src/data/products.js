@@ -33,7 +33,11 @@ export const products = [
         price: "Coming soon",
         oldPrice: "319 EUR",
         salePrice: "299 EUR",
-        image: "/images/elite.jpg",
+        image: "/images/aerostack_elite_1.jpg",
+        gallery: [
+            "/images/aerostack_pro.jpg",
+            "/images/angled_15.jpg"
+        ],
         description:
             'The AeroStack Elite Kit is the "smaller brother" of AeroStack Pinnacle. It combines increased stack height with improved wrist angle, delivering immediate gains in comfort and control.',
         details: [

@@ -105,6 +105,11 @@ export default function ProductPage() {
                                 {product.extraText}
                             </p>
                         )}
+                        {product.price === "Coming soon" && (
+                            <p className="mt-6 text-sm text-sky-300">
+                                Available for pre-order - first batch shipping in the last week of April 2026.
+                            </p>
+                        )}
 
                         <div className="mt-8">
                             <h2 className="text-xl font-semibold">Details</h2>

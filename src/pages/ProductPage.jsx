@@ -42,12 +42,27 @@ export default function ProductPage() {
                         <p className="mt-2 text-lg text-sky-300">{product.subtitle}</p>
 
                         <div className="mt-6 flex items-center gap-4">
-                            {product.oldPrice && (
-                                <span className="text-lg text-white/40 line-through">
-                                    {product.oldPrice}
-                                </span>
-                            )}
-                            <span className="text-2xl font-semibold">{product.price}</span>
+                            <div className="mt-6 flex flex-col gap-2">
+                                <div className="flex items-center gap-4">
+                                    {product.oldPrice && (
+                                        <span className="text-lg text-white/40 line-through">
+                                            {product.oldPrice}
+                                        </span>
+                                    )}
+                                    {product.salePrice && (
+                                        <span className="text-2xl font-semibold">{product.salePrice}</span>
+                                    )}
+                                    {!product.salePrice && (
+                                        <span className="text-2xl font-semibold">{product.price}</span>
+                                    )}
+                                </div>
+
+                                {product.price === "Coming soon" && (
+                                    <div className="text-sm font-medium uppercase tracking-wide text-sky-300">
+                                        Coming soon
+                                    </div>
+                                )}
+                            </div>
                         </div>
 
                         <p className="mt-6 text-lg leading-8 text-white/75">

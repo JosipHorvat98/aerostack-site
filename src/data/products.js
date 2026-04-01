@@ -26,18 +26,22 @@ export const products = [
         name: "AeroStack Elite",
         subtitle: "Balanced performance. Proven setup.",
         price: "Coming soon",
+        oldPrice: "319 EUR",
+        salePrice: "299 EUR",
         image: "/images/elite.jpg",
         description:
-            "The AeroStack Elite Kit is the most practical and widely used configuration. It combines increased stack height with improved wrist angle, delivering immediate gains in comfort and control.",
+            'The AeroStack Elite Kit is the "smaller brother" of AeroStack Pinnacle. It combines increased stack height with improved wrist angle, delivering immediate gains in comfort and control.',
         details: [
             "Includes AeroStack Pro (30 + 20 mm)",
             "Includes AeroStack Angled 15 spacer",
-            "Full bolt configuration",
             "85 mm total stack",
+            "Full high strength bolt configuration (for 85 mm or 65 mm configuration)",
             "Improved wrist angle",
             "More natural upper body position",
             "Better long-duration comfort",
-            "Ideal for riders who want a complete and proven solution"
+            "Ideal for riders who want a complete and proven solution",
+            "Built for long efforts",
+            "Crafted from premium aluminum, anodized"
         ]
     },
     {

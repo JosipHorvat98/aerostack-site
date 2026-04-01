@@ -1,9 +1,22 @@
 ﻿import { Link, useParams } from "react-router-dom";
 import { products } from "../data/products";
+import { useState } from "react";
 
 export default function ProductPage() {
     const { slug } = useParams();
     const product = products.find((item) => item.slug === slug);
+    const [selectedImage, setSelectedImage] = useState(null);
+    {
+        product.gallery.map((img, index) => (
+            <img
+                key={index}
+                src={img}
+                alt=""
+                onClick={() => setSelectedImage(img)}
+                className="rounded-xl border border-white/10 cursor-pointer hover:opacity-80"
+            />
+        ))
+    }
 
     if (!product) {
         return (
@@ -28,7 +41,8 @@ export default function ProductPage() {
                         <img
                             src={product.image}
                             alt={product.name}
-                            className="w-full rounded-2xl border border-white/10"
+                            onClick={() => setSelectedImage(product.image)}
+                            className="w-full rounded-2xl border border-white/10 cursor-pointer"
                         />
 
                         {product.gallery?.length > 1 && (
@@ -37,8 +51,9 @@ export default function ProductPage() {
                                     <img
                                         key={index}
                                         src={img}
-                                        alt={`${product.name} ${index + 1}`}
-                                        className="rounded-xl border border-white/10"
+                                        alt=""
+                                        onClick={() => setSelectedImage(img)}
+                                        className="rounded-xl border border-white/10 cursor-pointer hover:opacity-80"
                                     />
                                 ))}
                             </div>

@@ -81,6 +81,11 @@ export default function ProductPage() {
                         <p className="mt-6 text-lg leading-8 text-white/75">
                             {product.description}
                         </p>
+                        {product.extraText && (
+                            <p className="mt-6 whitespace-pre-line text-white/70">
+                                {product.extraText}
+                            </p>
+                        )}
 
                         <div className="mt-8">
                             <h2 className="text-xl font-semibold">Details</h2>

@@ -5,7 +5,7 @@ export const products = [
         subtitle: "The pinnacle of your aero position",
         price: "Coming soon",
         oldPrice: "340 EUR",
-        salePrice: "330 EUR",
+        salePrice: "319 EUR",
         image: "/images/aerostack_pro.jpg",
         gallery: [
             "/images/preachreach.jpg",
@@ -31,7 +31,7 @@ export const products = [
         name: "AeroStack Elite",
         subtitle: "Balanced performance. Proven setup.",
         price: "Coming soon",
-        oldPrice: "319 EUR",
+        oldPrice: "320 EUR",
         salePrice: "299 EUR",
         image: "/images/aerostack_elite_1.jpg",
         gallery: [

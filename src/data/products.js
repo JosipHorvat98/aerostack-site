@@ -105,5 +105,25 @@ export const products = [
             "+30 mm reach",
             "Purpose-built geometry"
         ]
+    },
+    {
+        slug: "aerostack-basic",
+        name: "AeroStack BASIC Kit",
+        subtitle: "30 mm spacer",
+        price: "125 EUR",
+
+        description:
+            "AEROSTACK BASIC (30 mm) is the simplest way to unlock additional stack on the Canyon Gear Groove setup.",
+
+        details: [
+            "Includes 30 mm spacer",
+            "65 mm total stack",
+            "Full high strength bolt configuration"
+        ],
+
+        extraText:
+            "This kit provides a clean and effective increase in front-end height, helping relieve pressure on the neck and shoulders - especially on longer rides.\n\nIdeal as an entry point, or for riders who need a moderate adjustment without going to a full stack setup.\n\nA small change - that can make a big difference in comfort and control."
+
     }
+    
 ];

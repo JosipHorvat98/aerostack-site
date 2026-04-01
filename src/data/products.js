@@ -78,16 +78,16 @@ export const products = [
     {
         slug: "aerostack-tilt",
         name: "AeroStack Tilt",
-        subtitle: "15 degree angled spacer",
-        price: "Coming soon",
+        subtitle: "15\u00B0 angled spacer",
+        price: "135 EUR",
         image: "/images/tilt.jpg",
         description:
-            "Focused on wrist comfort and improved hand position.",
+            "The AeroStack Tilt (15\u00B0) spacer is designed to improve wrist angle and comfort without changing stack height.",
         details: [
-            "15 degree tilt",
-            "Clean cockpit integration",
-            "Comfort-focused geometry",
-            "Small-batch production"
+            "15\u00B0 tilt",
+            "Improved wrist position",
+            "Comfort focused geometry",
+            "Clean cockpit integration"
         ]
     },
     {

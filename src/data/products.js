@@ -50,19 +50,22 @@ export const products = [
         ]
     },
     {
-        slug: "aerostack-riser-kit",
-        name: "AeroStack Riser Kit",
-        subtitle: "30 mm + 20 mm stack risers",
-        price: "199 EUR",
-        image: "/images/riser-kit.jpg",
+        slug: "aerostack-pro",
+        name: "AeroStack PRO Kit",
+        subtitle: "The core of a truly functional aero setup",
+        price: "185 EUR",
         description:
-            "Precision-machined aluminium risers developed specifically for Canyon Gear Groove aero extensions.",
+            "This kit represents THE CORE of a truly functional aero setup. It allows you to significantly increase front-end stack - the key factor most riders are missing. Because the real question is not how aero you can get, it is how long you can stay there.",
         details: [
-            "CNC-machined aluminium",
-            "Works with original Canyon spacers",
-            "High-strength bolts included",
-            "Built for real-world riding"
-        ]
+            "Includes 30 + 20 mm spacers",
+            "85 mm total stack",
+            "Full high strength bolt configuration (for 85 mm or 65 mm configuration)",
+            "Better long-duration comfort",
+            "Built for long efforts",
+            "Crafted from premium aluminum, anodized"
+        ],
+        extraText:
+            "This is where the PRO kit makes the difference: by raising the front end to a sustainable position, it reduces strain on the neck, shoulders and lower back - allowing you to hold your aero position for longer, especially during long-distance efforts.\n\nIf you are serious about long-distance performance, this is not an upgrade - it is a requirement."
     },
     {
         slug: "aerostack-tilt",

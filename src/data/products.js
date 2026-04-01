@@ -58,6 +58,11 @@ export const products = [
         name: "AeroStack PRO Kit",
         subtitle: "The core of a truly functional aero setup",
         price: "185 EUR",
+        image: "/images/aerostack_pro_plus.jpg",
+        gallery: [
+            "/images/aerostack_pro.jpg",
+            "/images/aerostack_pro_plus_final.jpg"
+        ],
         description:
             "This kit represents THE CORE of a truly functional aero setup. It allows you to significantly increase front-end stack - the key factor most riders are missing. Because the real question is not how aero you can get, it is how long you can stay there.",
         details: [

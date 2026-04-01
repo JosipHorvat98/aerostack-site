@@ -30,6 +30,16 @@ export default function ProductPage() {
                             alt={product.name}
                             className="h-full w-full object-cover"
                         />
+                        <div className="mt-4 grid grid-cols-2 gap-3">
+                            {product.gallery?.map((img, index) => (
+                                <img
+                                    key={index}
+                                    src={img}
+                                    alt=""
+                                    className="rounded-xl border border-white/10"
+                                />
+                            ))}
+                        </div>
                     </div>
 
                     <div>

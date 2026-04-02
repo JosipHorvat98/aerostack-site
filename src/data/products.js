@@ -80,7 +80,7 @@ export const products = [
         name: "AeroStack Tilt",
         subtitle: "15\u00B0 angled spacer",
         price: "135 EUR",
-        image: "/images/tilt.jpg",
+        image: "/images/aerostack_tilt.jpg",
         description:
             "The AeroStack Tilt (15\u00B0) spacer is designed to improve wrist angle and comfort without changing stack height.",
         details: [
@@ -96,7 +96,7 @@ export const products = [
         subtitle: "15\u00B0 tilt + 20 mm stack + 30 mm reach",
         price: "Coming soon",
         salePrice: "155 EUR",
-
+        image: "/images/stackandreach.jpg",
         description:
             "The AeroStack Stack&Reach spacer allows opening of hip angle while maintaining a stable and aerodynamic upper body position.",
 
@@ -119,7 +119,7 @@ export const products = [
         name: "AeroStack BASIC Kit",
         subtitle: "30 mm spacer",
         price: "125 EUR",
-
+        image: "/images/aerostack_basic.jpg", 
         description:
             "AEROSTACK BASIC (30 mm) is the simplest way to unlock additional stack on the Canyon Gear Groove setup.",
 

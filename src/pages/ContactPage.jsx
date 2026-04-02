@@ -16,7 +16,7 @@ export default function ContactPage() {
 
                 <div className="mt-10 rounded-[2rem] border border-white/10 bg-white/5 p-6">
                     <div className="text-sm text-white/45">Email</div>
-                    <div className="mt-2 text-xl font-medium">contact@aerostacklabs.com</div>
+                    <div className="mt-2 text-xl font-medium">contact@aerostacklabs.eu</div>
                 </div>
             </main>
         </div>

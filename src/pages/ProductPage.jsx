@@ -125,7 +125,7 @@ export default function ProductPage() {
 
                         <div className="mt-10">
                             <a
-                                href="mailto:contact@aerostacklabs.com"
+                                href="mailto:contact@aerostacklabs.eu"
                                 className="rounded-2xl bg-sky-500 px-6 py-3 text-sm font-medium text-white transition hover:bg-sky-400"
                             >
                                 Order / Contact

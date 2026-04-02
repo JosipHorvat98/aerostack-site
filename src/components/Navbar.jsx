@@ -9,7 +9,7 @@ export default function Navbar() {
                     <div className="relative flex h-12 w-12 items-center justify-center">
                         <div className="absolute -inset-1 rounded-xl bg-gradient-to-br from-sky-400/30 to-blue-600/20 blur-md" />
 
-                        <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-neutral-600">
+                        <div className="flex h-20 w-20 items-center justify-center rounded-2xl border border-white/10 bg-neutral-600">
                             <img
                                 src={logo}
                                 alt="AeroStack Labs"

@@ -6,14 +6,14 @@ export default function Navbar() {
         <header className="sticky top-0 z-30 border-b border-white/10 bg-neutral-950/85 backdrop-blur">
             <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
                 <Link to="/" className="flex items-center gap-3">
-                    <div className="relative flex h-12 w-12 items-center justify-center">
-                        <div className="absolute -inset-1 rounded-xl bg-gradient-to-br from-sky-400/30 to-blue-600/20 blur-md" />
+                    <div className="relative flex h-20 w-20 items-center justify-center">
+                        <div className="absolute -inset-2 rounded-2xl bg-gradient-to-br from-sky-400/30 to-blue-600/20 blur-md" />
 
-                        <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/10 bg-neutral-600 shadow-lg">
+                        <div className="relative flex h-20 w-20 items-center justify-center rounded-2xl border border-white/10 bg-neutral-600 shadow-lg">
                             <img
                                 src={logo}
                                 alt="AeroStack Labs"
-                                className="h-12 w-auto"
+                                className="h-16 w-16 object-contain"
                             />
                         </div>
                     </div>

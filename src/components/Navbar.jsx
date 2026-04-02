@@ -9,11 +9,11 @@ export default function Navbar() {
                     <div className="relative flex h-12 w-12 items-center justify-center">
                         <div className="absolute -inset-1 rounded-xl bg-gradient-to-br from-sky-400/30 to-blue-600/20 blur-md" />
 
-                        <div className="flex h-20 w-20 items-center justify-center rounded-2xl border border-white/10 bg-neutral-600">
+                        <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/10 bg-neutral-600 shadow-lg">
                             <img
-                                src={logo}
+                                src="/logo.png"
                                 alt="AeroStack Labs"
-                                className="h-8 w-auto object-contain brightness-125 contrast-110"
+                                className="h-12 w-auto"
                             />
                         </div>
                     </div>

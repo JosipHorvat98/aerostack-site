@@ -11,7 +11,7 @@ export default function Navbar() {
 
                         <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/10 bg-neutral-600 shadow-lg">
                             <img
-                                src="/logo.png"
+                                src={logo}
                                 alt="AeroStack Labs"
                                 className="h-12 w-auto"
                             />

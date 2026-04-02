@@ -11,7 +11,7 @@ export default function ContactPage() {
                     Contact page
                 </h1>
                 <p className="mt-6 max-w-3xl text-lg leading-8 text-white/75">
-                    Placeholder content. This page is ready for the contact content you will send next.
+                    
                 </p>
 
                 <div className="mt-10 rounded-[2rem] border border-white/10 bg-white/5 p-6">

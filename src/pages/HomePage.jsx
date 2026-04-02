@@ -1,7 +1,7 @@
 ﻿import {Link } from "react-router-dom";
 import { products } from "../data/products";
 import Navbar from "../components/Navbar";
-import heroImage from "../assets/hero.JPEG";
+import heroImage from "../assets/hero1.jpg";
 
 
 export default function HomePage() {

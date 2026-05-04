@@ -32,8 +32,9 @@ export const products = [
         name: "AeroStack Elite",
         subtitle: "Balanced performance. Proven setup.",
         price: "Coming soon",
+        price: "299 EUR",
         oldPrice: "320 EUR",
-        salePrice: "299 EUR",
+        salePrice: null,
         image: "/images/aerostack_pro.jpg",
         gallery: [
             "/images/aerostack_tilt.jpg"

@@ -16,7 +16,9 @@ export default function ProductsPage() {
                 </div>
 
                 <div className="mt-12 grid gap-6 lg:grid-cols-3">
-                    {products.map((product) => (
+                    {products
+                        .filter((product) => product.slug !== "aerostack-pinnacle")
+                        .map((product) => (
                         <Link
                             key={product.slug}
                             to={`/products/${product.slug}`}

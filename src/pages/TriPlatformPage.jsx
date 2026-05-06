@@ -38,10 +38,17 @@ export default function TriPlatformPage() {
           </h2>
 
           <ul className="mt-6 space-y-3 text-white/75">
-            <li>Stack height range</li>
-            <li>Adjustable tilt angle for better arm and shoulder positioning</li>
-            <li>Improved fit and long-term comfort in the aero position</li>
-            <li>Freedom to fine-tune your cockpit for real-world performance</li>
+            {[
+              "Stack height range",
+              "Adjustable tilt angle for better arm and shoulder positioning",
+              "Improved fit and long-term comfort in the aero position",
+              "Freedom to fine-tune your cockpit for real-world performance",
+            ].map((item) => (
+              <li key={item} className="flex items-start gap-3">
+                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-sky-400" />
+                <span>{item}</span>
+              </li>
+            ))}
           </ul>
         </section>
 
@@ -93,10 +100,17 @@ export default function TriPlatformPage() {
           </p>
 
           <ul className="mt-6 space-y-3 text-white/75">
-            <li>Performance</li>
-            <li>Safety</li>
-            <li>Reliability</li>
-            <li>Clean, aero design</li>
+            {[
+              "Performance",
+              "Safety",
+              "Reliability",
+              "Clean, aero design",
+            ].map((item) => (
+              <li key={item} className="flex items-start gap-3">
+                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-sky-400" />
+                <span>{item}</span>
+              </li>
+            ))}
           </ul>
         </section>
 

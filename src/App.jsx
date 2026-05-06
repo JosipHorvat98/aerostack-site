@@ -6,6 +6,7 @@ import ContactPage from "./pages/ContactPage";
 import ProductPage from "./pages/ProductPage";
 import FaqPage from "./pages/FaqPage";
 import Terms from "./pages/Terms";
+import TriPlatformPage from "./pages/TriPlatformPage";
 
 export default function App() {
     return (
@@ -17,6 +18,7 @@ export default function App() {
             <Route path="/products/:slug" element={<ProductPage />} />
             <Route path="/faq" element={<FaqPage />} />
             <Route path="/terms" element={<Terms />} />
+            <Route path="/tri-platform" element={<TriPlatformPage />} />
         </Routes>
     );
 }

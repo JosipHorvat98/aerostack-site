@@ -2,7 +2,7 @@
 import { products } from "../data/products";
 import Navbar from "../components/Navbar";
 import heroImage from "../assets/hero1.jpg";
-
+import triBanner from "../assets/tri-platform-banner.jpg";
 
 export default function HomePage() {
     return (
@@ -39,10 +39,10 @@ export default function HomePage() {
 
                                 <div className="relative overflow-hidden rounded-[1.5rem]">
                                     <img
-                                        src={heroImage}
-                                        alt="Aero cockpit"
-                                        className="w-full h-full object-cover"
-                                    />
+                                        src={triBanner}
+                                        alt="AeroStack TRI Platform System"
+                                        className="w-full rounded-[2rem] border border-white/10 object-cover shadow-2xl shadow-sky-950/30 transition hover:scale-[1.01]"
+                                        />
                                 </div>
 
                             </div>
@@ -57,10 +57,15 @@ export default function HomePage() {
                             <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
                                 Components built around the Canyon Gear Groove interface.
                             </h2>
+                            <p className="mt-4 max-w-2xl text-lg leading-8 text-white/70">
+                                Increase stack height and make your aero position actually usable.
+                            </p>
                         </div>
 
                         <div className="mt-12 grid gap-6 lg:grid-cols-3">
-                            {products.map((product) => (
+                            {products
+                                .filter((product) => product.slug !== "aerostack-pinnacle")
+                                .map((product) => (
                                 <Link
                                     key={product.slug}
                                     to={`/products/${product.slug}`}

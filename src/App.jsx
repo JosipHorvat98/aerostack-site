@@ -7,6 +7,7 @@ import ProductPage from "./pages/ProductPage";
 import FaqPage from "./pages/FaqPage";
 import Terms from "./pages/Terms";
 import TriPlatformPage from "./pages/TriPlatformPage";
+import TshirtPage from "./pages/TshirtPage";
 
 export default function App() {
     return (
@@ -19,6 +20,7 @@ export default function App() {
             <Route path="/faq" element={<FaqPage />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/tri-platform" element={<TriPlatformPage />} />
+            <Route path="/apparel/tshirt" element={<TshirtPage />} />
         </Routes>
     );
 }

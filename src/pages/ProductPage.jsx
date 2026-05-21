@@ -107,7 +107,7 @@ export default function ProductPage() {
                         )}
                         {product.price === "Coming soon" && (
                             <p className="mt-6 text-sm text-sky-300">
-                                Available for pre-order - first batch shipping in the last week of April 2026.
+                                
                             </p>
                         )}
 

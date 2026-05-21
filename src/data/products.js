@@ -97,7 +97,7 @@ export const products = [
         subtitle: "15\u00B0 tilt + 20 mm stack + 30 mm reach",
         price: "Coming soon",
         salePrice: "155 EUR",
-        image: "/images/stackandreach.jpg",
+        image: "/images/stackreach-new.jpg",
         description:
             "The AeroStack Stack&Reach spacer allows opening of hip angle while maintaining a stable and aerodynamic upper body position.",
 

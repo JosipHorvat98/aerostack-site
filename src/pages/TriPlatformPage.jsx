@@ -1,6 +1,15 @@
+import { useState } from "react";
 import Navbar from "../components/Navbar";
 
 export default function TriPlatformPage() {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const triImages = [
+    "/images/tri-platform-1.jpg",
+    "/images/tri-platform-2.jpg",
+    "/images/tri-platform-3.jpg",
+  ];
+
   return (
     <div className="min-h-screen bg-neutral-950 text-white">
       <Navbar />
@@ -33,29 +42,20 @@ export default function TriPlatformPage() {
         </div>
 
         <div className="mt-16 grid gap-6 md:grid-cols-3">
-          <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white">
-            <img
-              src="/images/tri-platform-1.jpg"
-              alt="AeroStack TRI Platform"
-              className="w-full object-cover"
-            />
-          </div>
-
-          <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white">
-            <img
-              src="/images/tri-platform-2.jpg"
-              alt="AeroStack TRI Platform"
-              className="w-full object-cover"
-            />
-          </div>
-
-          <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white">
-            <img
-              src="/images/tri-platform-3.jpg"
-              alt="AeroStack TRI Platform"
-              className="w-full object-cover"
-            />
-          </div>
+          {triImages.map((image, index) => (
+            <button
+              key={image}
+              type="button"
+              onClick={() => setSelectedImage(image)}
+              className="overflow-hidden rounded-[2rem] border border-white/10 bg-white text-left transition hover:scale-[1.02]"
+            >
+              <img
+                src={image}
+                alt={`AeroStack TRI Platform ${index + 1}`}
+                className="w-full cursor-zoom-in object-cover"
+              />
+            </button>
+          ))}
         </div>
 
         <section className="mt-16 border-t border-white/10 pt-12">
@@ -102,16 +102,16 @@ export default function TriPlatformPage() {
             </p>
 
             <p>
-              The system comes complete with a 30 mm + 20 mm spacer kit,
-              along with a 20 mm core spacer, allowing riders to create a
-              fully modular stack setup.
+              The system comes complete with a 30 mm + 20 mm spacer kit, along
+              with a 20 mm core spacer, allowing riders to create a fully
+              modular stack setup.
             </p>
 
             <p>
               Depending on the configuration, the system enables stack heights
               of 20 mm, 40 mm, 50 mm, or 70 mm - giving you the freedom to
-              fine-tune your fit, comfort, and aero position exactly the way
-              you want it.
+              fine-tune your fit, comfort, and aero position exactly the way you
+              want it.
             </p>
           </div>
         </section>
@@ -187,6 +187,28 @@ export default function TriPlatformPage() {
           </a>
         </div>
       </main>
+
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <img
+            src={selectedImage}
+            alt="Expanded AeroStack TRI Platform"
+            className="max-h-[90vh] max-w-[90vw] rounded-2xl"
+            onClick={(e) => e.stopPropagation()}
+          />
+
+          <button
+            type="button"
+            onClick={() => setSelectedImage(null)}
+            className="absolute right-6 top-6 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm text-white"
+          >
+            Close
+          </button>
+        </div>
+      )}
     </div>
   );
 }

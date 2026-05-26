@@ -32,6 +32,32 @@ export default function TriPlatformPage() {
           </p>
         </div>
 
+        <div className="mt-16 grid gap-6 md:grid-cols-3">
+          <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white">
+            <img
+              src="/images/tri-platform-1.jpg"
+              alt="AeroStack TRI Platform"
+              className="w-full object-cover"
+            />
+          </div>
+
+          <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white">
+            <img
+              src="/images/tri-platform-2.jpg"
+              alt="AeroStack TRI Platform"
+              className="w-full object-cover"
+            />
+          </div>
+
+          <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white">
+            <img
+              src="/images/tri-platform-3.jpg"
+              alt="AeroStack TRI Platform"
+              className="w-full object-cover"
+            />
+          </div>
+        </div>
+
         <section className="mt-16 border-t border-white/10 pt-12">
           <h2 className="text-2xl font-semibold tracking-tight">
             Real adjustability where it matters.
@@ -40,7 +66,7 @@ export default function TriPlatformPage() {
           <ul className="mt-6 space-y-3 text-white/75">
             {[
               "Stack height range",
-              "Adjustable tilt angle for better arm and shoulder positioning",
+              "Adjustable tilt angle for better arm and shoulder positioning (with AeroStack Tilt 15\u00B0 spacer, sold separately)",
               "Improved fit and long-term comfort in the aero position",
               "Freedom to fine-tune your cockpit for real-world performance",
             ].map((item) => (
@@ -73,6 +99,19 @@ export default function TriPlatformPage() {
               The TRI Platform Kit works seamlessly with spacers and components
               within the AeroStack Labs ecosystem, giving you a modular system
               that grows with your needs.
+            </p>
+
+            <p>
+              The system comes complete with a 30 mm + 20 mm spacer kit,
+              along with a 20 mm core spacer, allowing riders to create a
+              fully modular stack setup.
+            </p>
+
+            <p>
+              Depending on the configuration, the system enables stack heights
+              of 20 mm, 40 mm, 50 mm, or 70 mm - giving you the freedom to
+              fine-tune your fit, comfort, and aero position exactly the way
+              you want it.
             </p>
           </div>
         </section>

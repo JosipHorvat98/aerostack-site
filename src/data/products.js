@@ -88,7 +88,8 @@ export const products = [
             "15\u00B0 tilt",
             "Improved wrist position",
             "Comfort focused geometry",
-            "Clean cockpit integration"
+            "Clean cockpit integration",
+            "COMPATIBLE with AeroStack TRI Platform System"
         ]
     },
     {

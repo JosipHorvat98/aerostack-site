@@ -61,6 +61,31 @@ export default function Navbar() {
           <Link to="/terms" className="transition hover:text-sky-300">
             Terms
           </Link>
+          <div className="ml-4 flex items-center gap-3 border-l border-white/10 pl-6">
+  <span className="text-sm font-semibold uppercase tracking-wide text-white">
+    Follow us
+  </span>
+
+  <a
+    href="https://www.instagram.com/aerostacklabs/"
+    target="_blank"
+    rel="noreferrer"
+    className="text-white/80 transition hover:text-sky-300"
+    aria-label="Instagram"
+  >
+    Instagram
+  </a>
+
+  <a
+    href="https://www.facebook.com/profile.php?id=61576505266728"
+    target="_blank"
+    rel="noreferrer"
+    className="text-white/80 transition hover:text-sky-300"
+    aria-label="Facebook"
+  >
+    Facebook
+  </a>
+</div>
         </nav>
 
         {/* MOBILE BUTTON */}
@@ -130,6 +155,25 @@ export default function Navbar() {
             >
               Terms
             </Link>
+            <a
+  href="https://www.instagram.com/aerostacklabs/"
+  target="_blank"
+  rel="noreferrer"
+  onClick={closeMenu}
+  className="border-b border-white/10 py-3 transition hover:text-sky-300"
+>
+  Instagram
+</a>
+
+<a
+  href="https://www.facebook.com/profile.php?id=61576505266728"
+  target="_blank"
+  rel="noreferrer"
+  onClick={closeMenu}
+  className="py-3 transition hover:text-sky-300"
+>
+  Facebook
+</a>
           </nav>
         </div>
       )}

@@ -61,25 +61,35 @@ export default function Navbar() {
           <Link to="/terms" className="transition hover:text-sky-300">
             Terms
           </Link>
-          <a
-  href="https://www.instagram.com/aerostacklabs/"
-  target="_blank"
-  rel="noreferrer"
-  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/15 text-xs font-bold text-white/80 transition hover:border-sky-400 hover:text-sky-300"
-  aria-label="Instagram"
->
-  IG
-</a>
+          <div className="ml-4 flex items-center gap-3 border-l border-white/10 pl-6">
+  <a
+    href="https://www.instagram.com/aerostacklabs/"
+    target="_blank"
+    rel="noreferrer"
+    className="transition hover:scale-110 hover:opacity-80"
+    aria-label="Instagram"
+  >
+    <img
+      src="/icons/instagram.png"
+      alt="Instagram"
+      className="h-7 w-7 rounded-full"
+    />
+  </a>
 
-<a
-  href="https://www.facebook.com/profile.php?id=61576505266728"
-  target="_blank"
-  rel="noreferrer"
-  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/15 text-xs font-bold text-white/80 transition hover:border-sky-400 hover:text-sky-300"
-  aria-label="Facebook"
->
-  FB
-</a>
+  <a
+    href="https://www.facebook.com/profile.php?id=61576505266728"
+    target="_blank"
+    rel="noreferrer"
+    className="transition hover:scale-110 hover:opacity-80"
+    aria-label="Facebook"
+  >
+    <img
+      src="/icons/facebook.png"
+      alt="Facebook"
+      className="h-7 w-7 rounded-full"
+    />
+  </a>
+</div>
         </nav>
 
         {/* MOBILE BUTTON */}
@@ -154,18 +164,24 @@ export default function Navbar() {
     href="https://www.instagram.com/aerostacklabs/"
     target="_blank"
     rel="noreferrer"
-    className="text-white/80 transition hover:text-sky-300"
   >
-    <Instagram size={22} />
+    <img
+      src="/icons/instagram.png"
+      alt="Instagram"
+      className="h-8 w-8 rounded-full"
+    />
   </a>
 
   <a
     href="https://www.facebook.com/profile.php?id=61576505266728"
     target="_blank"
     rel="noreferrer"
-    className="text-white/80 transition hover:text-sky-300"
   >
-    <Facebook size={22} />
+    <img
+      src="/icons/facebook.png"
+      alt="Facebook"
+      className="h-8 w-8 rounded-full"
+    />
   </a>
 </div>
           </nav>

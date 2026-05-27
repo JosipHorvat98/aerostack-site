@@ -61,31 +61,25 @@ export default function Navbar() {
           <Link to="/terms" className="transition hover:text-sky-300">
             Terms
           </Link>
-          <div className="ml-4 flex items-center gap-3 border-l border-white/10 pl-6">
-  <span className="text-sm font-semibold uppercase tracking-wide text-white">
-    Follow us
-  </span>
+          <a
+  href="https://www.instagram.com/aerostacklabs/"
+  target="_blank"
+  rel="noreferrer"
+  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/15 text-xs font-bold text-white/80 transition hover:border-sky-400 hover:text-sky-300"
+  aria-label="Instagram"
+>
+  IG
+</a>
 
-  <a
-    href="https://www.instagram.com/aerostacklabs/"
-    target="_blank"
-    rel="noreferrer"
-    className="text-white/80 transition hover:text-sky-300"
-    aria-label="Instagram"
-  >
-    Instagram
-  </a>
-
-  <a
-    href="https://www.facebook.com/profile.php?id=61576505266728"
-    target="_blank"
-    rel="noreferrer"
-    className="text-white/80 transition hover:text-sky-300"
-    aria-label="Facebook"
-  >
-    Facebook
-  </a>
-</div>
+<a
+  href="https://www.facebook.com/profile.php?id=61576505266728"
+  target="_blank"
+  rel="noreferrer"
+  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/15 text-xs font-bold text-white/80 transition hover:border-sky-400 hover:text-sky-300"
+  aria-label="Facebook"
+>
+  FB
+</a>
         </nav>
 
         {/* MOBILE BUTTON */}
@@ -155,25 +149,25 @@ export default function Navbar() {
             >
               Terms
             </Link>
-            <a
-  href="https://www.instagram.com/aerostacklabs/"
-  target="_blank"
-  rel="noreferrer"
-  onClick={closeMenu}
-  className="border-b border-white/10 py-3 transition hover:text-sky-300"
->
-  Instagram
-</a>
+            <div className="flex items-center gap-5 pt-4">
+  <a
+    href="https://www.instagram.com/aerostacklabs/"
+    target="_blank"
+    rel="noreferrer"
+    className="text-white/80 transition hover:text-sky-300"
+  >
+    <Instagram size={22} />
+  </a>
 
-<a
-  href="https://www.facebook.com/profile.php?id=61576505266728"
-  target="_blank"
-  rel="noreferrer"
-  onClick={closeMenu}
-  className="py-3 transition hover:text-sky-300"
->
-  Facebook
-</a>
+  <a
+    href="https://www.facebook.com/profile.php?id=61576505266728"
+    target="_blank"
+    rel="noreferrer"
+    className="text-white/80 transition hover:text-sky-300"
+  >
+    <Facebook size={22} />
+  </a>
+</div>
           </nav>
         </div>
       )}

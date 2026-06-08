@@ -187,25 +187,25 @@ export default function TriPlatformPage() {
         </section>
 
         <div className="mx-auto mt-16 max-w-5xl rounded-[2rem] border border-sky-400/20 bg-sky-400/10 p-8">
-          <p className="text-sm uppercase tracking-[0.2em] text-sky-300">
-            Preorder / Contact
-          </p>
+            <p className="text-sm uppercase tracking-[0.2em] text-sky-300">
+                ORDER NOW
+            </p>
 
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight">
-            Detailed pricing and preorders - end of May 2026.
-          </h2>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight">
+                530 EUR
+            </h2>
 
-          <p className="mt-5 text-white/75">
-            Interested in the AeroStack TRI Platform System? Contact us to get
-            updates, preorder information, and setup guidance.
-          </p>
+            <p className="mt-5 text-white/75">
+                Interested in AeroStack TRI Platform System? Contact us to get order
+                information and setup guidance.
+            </p>
 
-          <a
-            href="mailto:contact@aerostacklabs.eu"
-            className="mt-6 inline-block rounded-2xl bg-sky-500 px-6 py-3 text-sm font-medium text-white transition hover:bg-sky-400"
-          >
-            Contact / Preorder
-          </a>
+            <a
+                href="mailto:contact@aerostacklabs.eu"
+                className="mt-6 inline-block rounded-2xl bg-sky-500 px-6 py-3 text-sm font-medium text-white transition hover:bg-sky-400"
+            >
+                Order Now
+            </a>
         </div>
       </main>
 

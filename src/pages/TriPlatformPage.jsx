@@ -1,5 +1,28 @@
-﻿import { useState } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
+
+const ULTRA_GALLERY = [
+  "/images/aerostackultra1.jpg",
+  "/images/aerostackultra2.jpg",
+  "/images/aerostackultra3.jpg"
+];
+
+const DIFFERENT = [
+  "Infinity Plate \u2013 freedom of choice \u2013 The Infinity Plate creates the foundation for a truly customizable aero cockpit, allowing you to use different aerobar and arm cup configurations instead of being locked into the original setup.",
+  "CORE Spacer \u2013 designed to provide 20 mm of additional stack height in a single, solid component. While a standard Canyon Gear Groove spacer provides 10 mm of stack, one AeroStack CORE Spacer gives you 20 mm \u2013 allowing you to achieve the same height with fewer individual components in your spacer stack.",
+  "More control over your position \u2013 Stack is only one part of a good aero fit. Tilt can change how your arms, shoulders and upper body interact with the cockpit \u2013 especially when spending hours in the aero position.",
+  "Built for long-course riding \u2013 ULTRA is designed for riders who prioritize a stable and sustainable aero position for long-distance triathlon and time trial riding.",
+  "One modular ecosystem \u2013 The system remains compatible with the AeroStack spacer ecosystem, allowing you to further customize your stack according to your individual bike fit."
+];
+
+const INCLUDED = [
+  "1 \u00D7 AeroStack Infinity Plate",
+  "PRO KIT (30+20 mm spacers)",
+  "1 \u00D7 AeroStack CORE Spacer 20 mm height",
+  "Required mounting hardware",
+  "Aerobars and arm cups shown in product photos are not included unless specifically stated."
+];
 
 export default function TriPlatformPage() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -8,204 +31,92 @@ export default function TriPlatformPage() {
     <div className="min-h-screen bg-neutral-950 text-white">
       <Navbar />
 
-      <main className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
-        <section className="mx-auto max-w-5xl">
-          <p className="text-sm uppercase tracking-[0.2em] text-sky-300">
-            AeroStack ULTRA
-          </p>
+      <main className="mx-auto max-w-6xl px-6 py-20 lg:px-10">
+        <div className="mb-8">
+          <Link to="/products" className="text-sm text-sky-300 hover:text-sky-200">
+            \u2190 Back to products
+          </Link>
+        </div>
 
-          <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-            Build your aero setup your way.
-          </h1>
-
-          <div className="mt-10 space-y-8 text-lg leading-8 text-white/75">
-            <p>
-              The AeroStack ULTRA is our complete cockpit solution
-              for Canyon riders who want more than the limitations of the
-              standard Gear Groove system.
-            </p>
-
-            <p>
-              While the stock Canyon Gear Groove Aero Extension offers a clean
-              and integrated design, it comes with limited adjustability and
-              restricts riders to a fixed setup.
-            </p>
-
-            <p className="text-xl font-semibold text-white">
-              We built this system to change that.
-            </p>
-          </div>
-        </section>
-
-        <section className="mt-24 grid items-center gap-16 lg:grid-cols-2">
-          <button
-            type="button"
-            onClick={() => setSelectedImage("/images/aerostackultra1.jpg")}
-            className="overflow-hidden rounded-[2rem] border border-white/10 bg-white transition hover:scale-[1.01]"
-          >
-            <img
-              src="/images/aerostackultra1.jpg"
-              alt="AeroStack ULTRA"
-              className="w-full cursor-zoom-in object-cover"
-            />
-          </button>
-
+        <div className="grid gap-12 lg:grid-cols-2">
           <div>
-            <h2 className="text-3xl font-semibold tracking-tight">
-              Real adjustability where it matters.
-            </h2>
+            <img
+              src={ULTRA_GALLERY[0]}
+              alt="AeroStack ULTRA"
+              onClick={() => setSelectedImage(ULTRA_GALLERY[0])}
+              className="w-full cursor-zoom-in rounded-2xl border border-white/10"
+            />
 
-            <ul className="mt-8 space-y-4 text-lg text-white/75">
-              {[
-                "Stack height range",
-                "Adjustable tilt angle for better arm and shoulder positioning (with AeroStack Tilt 15\u00B0 spacer, sold separately)",
-                "Improved fit and long-term comfort in the aero position",
-                "Freedom to fine-tune your cockpit for real-world performance",
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-4">
-                  <span className="mt-3 h-2 w-2 rounded-full bg-sky-400" />
-                  <span>{item}</span>
-                </li>
+            <div className="mt-4 grid grid-cols-2 gap-3">
+              {ULTRA_GALLERY.slice(1).map((img, index) => (
+                <img
+                  key={img}
+                  src={img}
+                  alt={`AeroStack ULTRA view ${index + 2}`}
+                  onClick={() => setSelectedImage(img)}
+                  className="cursor-zoom-in rounded-xl border border-white/10 transition hover:opacity-80"
+                />
               ))}
-            </ul>
-          </div>
-        </section>
-
-        <section className="mt-24 grid items-center gap-16 lg:grid-cols-2">
-          <div className="order-2 lg:order-1">
-            <h2 className="text-3xl font-semibold tracking-tight">
-              Build YOUR aero setup YOUR way.
-            </h2>
-
-            <div className="mt-8 space-y-6 text-lg leading-8 text-white/75">
-              <p>
-                At the core of the system is a precision-engineered mounting
-                platform called the AeroStack Infinity Plate, designed to allow
-                the use of a wide variety of aerobars.
-              </p>
-
-              <p>
-                No lock-in. No compromises. Just a setup that works for your
-                body, your position, and your racing goals.
-              </p>
-
-              <p>
-                The AeroStack ULTRA kit works seamlessly with spacers and
-                components within the AeroStack Labs ecosystem, giving you a
-                modular system that grows with your needs.
-              </p>
-
-              <p>
-                The system comes complete with a 30 mm + 20 mm spacer kit, along
-                with a 20 mm core spacer, allowing riders to create a fully
-                modular stack setup.
-              </p>
-
-              <p>
-                Depending on the configuration, the system enables stack heights
-                of 20 mm, 40 mm, 50 mm, or 70 mm - giving you the freedom to
-                fine-tune your fit, comfort, and aero position exactly the way
-                you want it.
-              </p>
             </div>
           </div>
 
-          <button
-            type="button"
-            onClick={() => setSelectedImage("/images/aerostackultra2.jpg")}
-            className="order-1 overflow-hidden rounded-[2rem] border border-white/10 bg-white transition hover:scale-[1.01] lg:order-2"
-          >
-            <img
-              src="/images/aerostackultra2.jpg"
-              alt="AeroStack ULTRA"
-              className="w-full cursor-zoom-in object-cover"
-            />
-          </button>
-        </section>
-
-        <section className="mt-24 grid items-center gap-16 lg:grid-cols-2">
-          <button
-            type="button"
-            onClick={() => setSelectedImage("/images/aerostackultra3.jpg")}
-            className="overflow-hidden rounded-[2rem] border border-white/10 bg-white transition hover:scale-[1.01]"
-          >
-            <img
-              src="/images/aerostackultra3.jpg"
-              alt="AeroStack ULTRA"
-              className="w-full cursor-zoom-in object-cover"
-            />
-          </button>
-
           <div>
-            <h2 className="text-3xl font-semibold tracking-tight">
-              Fully functional 2-in-1 solution.
-            </h2>
-
-            <p className="mt-8 text-lg leading-8 text-white/75">
-              The system allows you to transform your Canyon bike into a
-              functional triathlon setup - ideal for riders who do not need a
-              dedicated TT bike.
-            </p>
-          </div>
-        </section>
-
-        <section className="mx-auto mt-24 max-w-5xl border-t border-white/10 pt-12">
-          <h2 className="text-2xl font-semibold tracking-tight">
-            Designed by riders, tested in real conditions.
-          </h2>
-
-          <p className="mt-6 text-lg leading-8 text-white/75">
-            Every component is developed based on real-world use. Built by
-            athletes, for athletes - with a clear focus on:
-          </p>
-
-          <ul className="mt-6 space-y-3 text-white/75">
-            {[
-              "Performance",
-              "Safety",
-              "Reliability",
-              "Clean, aero design",
-            ].map((item) => (
-              <li key={item} className="flex items-start gap-3">
-                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-sky-400" />
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section className="mx-auto mt-16 max-w-5xl border-t border-white/10 pt-12">
-          <h2 className="text-2xl font-semibold tracking-tight">
-            Choose your own aerobars.
-          </h2>
-
-          <p className="mt-6 text-lg leading-8 text-white/75">
-            We do not sell aerobars, but we are happy to advise clients on good
-            and suitable options available on the market, based on our own
-            personal testing and experience.
-          </p>
-        </section>
-
-        <div className="mx-auto mt-16 max-w-5xl rounded-[2rem] border border-sky-400/20 bg-sky-400/10 p-8">
             <p className="text-sm uppercase tracking-[0.2em] text-sky-300">
-                ORDER NOW
+              Product
             </p>
 
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight">
-                540 EUR
-            </h2>
+            <h1 className="mt-3 text-4xl font-semibold tracking-tight">
+              AeroStack ULTRA
+            </h1>
 
-            <p className="mt-5 text-white/75">
-                Interested in AeroStack ULTRA? Contact us to get order
-                information and setup guidance.
+            <p className="mt-2 text-lg text-sky-300">
+              Maximum freedom. Built around your position.
             </p>
 
-            <a
+            <div className="mt-6 flex items-center gap-4">
+              <span className="text-2xl font-semibold">550 EUR</span>
+            </div>
+
+            <p className="mt-6 text-lg leading-8 text-white/75">
+              Maximum freedom. Built around your position. The AeroStack ULTRA combines the Infinity Plate with our CORE Spacer, giving you the freedom to choose your preferred aerobars while adding an optimized tilt to your cockpit. A complete platform for riders who want to take control of their aero position. Your fit. Your aerobars. Your system.
+            </p>
+
+            <p className="mt-6 whitespace-pre-line text-white/70">
+              At the heart of the system is the AeroStack Infinity Plate, giving you the freedom to move beyond the limitations of the original cockpit and build your aero setup around the aerobars and arm cups that actually work for you.\n\nAeroStack ULTRA is designed for riders who want more than simply raising their cockpit.\n\nIt's for riders who want the freedom to choose their own aerobars, introduce tilt into their position and build the cockpit around their body \u2013 rather than adapting their body to the cockpit.\n\nNeed help building your configuration? Send us a photo of your current cockpit and tell us your current spacer setup and preferred aerobars. We'll help you determine the right AeroStack configuration.\n\nYour fit. Your aerobars. Your system. No limitations.
+            </p>
+            <div className="mt-8">
+              <h2 className="text-xl font-semibold">What makes ULTRA different?</h2>
+              <ul className="mt-4 space-y-3 text-white/75">
+                {DIFFERENT.map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 rounded-full bg-sky-400" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="mt-8">
+              <h2 className="text-xl font-semibold">What's included?</h2>
+              <ul className="mt-4 space-y-3 text-white/75">
+                {INCLUDED.map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 rounded-full bg-sky-400" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="mt-10">
+              <a
                 href="mailto:contact@aerostacklabs.eu"
-                className="mt-6 inline-block rounded-2xl bg-sky-500 px-6 py-3 text-sm font-medium text-white transition hover:bg-sky-400"
-            >
-                Order Now
-            </a>
+                className="rounded-2xl bg-sky-500 px-6 py-3 text-sm font-medium text-white transition hover:bg-sky-400"
+              >
+                Order / Contact
+              </a>
+            </div>
+          </div>
         </div>
       </main>
 
@@ -233,3 +144,4 @@ export default function TriPlatformPage() {
     </div>
   );
 }
+

@@ -92,7 +92,7 @@ export default function ProductsPage() {
               </div>
 
               <span className="absolute left-3 top-3 rounded-full border border-white/10 bg-black/60 px-3 py-1 text-sm font-semibold text-white backdrop-blur">
-                540 EUR
+                550 EUR
               </span>
 
               <span className="absolute right-3 top-3 rounded-full bg-white/10 px-2 py-1 text-xs uppercase tracking-wide text-white/60">

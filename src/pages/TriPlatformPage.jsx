@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import Navbar from "../components/Navbar";
 
 export default function TriPlatformPage() {
@@ -61,11 +61,11 @@ export default function TriPlatformPage() {
         <section className="mt-24 grid items-center gap-16 lg:grid-cols-2">
           <button
             type="button"
-            onClick={() => setSelectedImage("/images/tri-platform-1.jpg")}
+            onClick={() => setSelectedImage("/images/aerostackultra1.jpg")}
             className="overflow-hidden rounded-[2rem] border border-white/10 bg-white transition hover:scale-[1.01]"
           >
             <img
-              src="/images/tri-platform-1.jpg"
+              src="/images/aerostackultra1.jpg"
               alt="AeroStack ULTRA"
               className="w-full cursor-zoom-in object-cover"
             />
@@ -133,11 +133,11 @@ export default function TriPlatformPage() {
 
           <button
             type="button"
-            onClick={() => setSelectedImage("/images/tri-platform-2.jpg")}
+            onClick={() => setSelectedImage("/images/aerostackultra2.jpg")}
             className="order-1 overflow-hidden rounded-[2rem] border border-white/10 bg-white transition hover:scale-[1.01] lg:order-2"
           >
             <img
-              src="/images/tri-platform-2.jpg"
+              src="/images/aerostackultra2.jpg"
               alt="AeroStack ULTRA"
               className="w-full cursor-zoom-in object-cover"
             />
@@ -147,11 +147,11 @@ export default function TriPlatformPage() {
         <section className="mt-24 grid items-center gap-16 lg:grid-cols-2">
           <button
             type="button"
-            onClick={() => setSelectedImage("/images/tri-platform-3.jpg")}
+            onClick={() => setSelectedImage("/images/aerostackultra3.jpg")}
             className="overflow-hidden rounded-[2rem] border border-white/10 bg-white transition hover:scale-[1.01]"
           >
             <img
-              src="/images/tri-platform-3.jpg"
+              src="/images/aerostackultra3.jpg"
               alt="AeroStack ULTRA"
               className="w-full cursor-zoom-in object-cover"
             />

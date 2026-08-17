@@ -240,11 +240,7 @@
         name: "AeroStack ULTIMATE",
         subtitle: "Maximum freedom. Built around your position.",
         price: "565 EUR",
-        image: "/images/aerostackultra1.jpg",
-        gallery: [
-            "/images/aerostackultra2.jpg",
-            "/images/aerostackultra3.jpg"
-        ],
+        image: "/images/aerostackultra3.jpg",
         description:
             "Maximum freedom. Built around your position. The AeroStack ULTIMATE combines the Infinity Plate with our 15\u00B0 TILT Spacer, giving you the freedom to choose your preferred aerobars while adding an optimized tilt to your cockpit. A complete platform for riders who want to take control of their aero position. Your fit. Your aerobars. Your system.",
         extraText:

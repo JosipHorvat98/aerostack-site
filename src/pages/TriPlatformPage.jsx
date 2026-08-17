@@ -35,6 +35,27 @@ export default function TriPlatformPage() {
               We built this system to change that.
             </p>
           </div>
+
+          <div className="mt-10 grid grid-cols-3 gap-4">
+            {[
+              "/images/aerostackultra1.jpg",
+              "/images/aerostackultra2.jpg",
+              "/images/aerostackultra3.jpg"
+            ].map((img, index) => (
+              <button
+                key={img}
+                type="button"
+                onClick={() => setSelectedImage(img)}
+                className="overflow-hidden rounded-2xl border border-white/10 bg-white transition hover:scale-[1.02]"
+              >
+                <img
+                  src={img}
+                  alt={`AeroStack ULTRA view ${index + 1}`}
+                  className="aspect-[4/3] w-full cursor-zoom-in object-cover"
+                />
+              </button>
+            ))}
+          </div>
         </section>
 
         <section className="mt-24 grid items-center gap-16 lg:grid-cols-2">

@@ -4,18 +4,19 @@ import Navbar from "../components/Navbar";
 import { products } from "../data/products";
 import ProductCard from "../components/ProductCard";
 
-const categories = ["All", "Stack Kits", "Spacers", "Platforms", "Systems"];
+const categories = ["All", "Stack Kits", "Spacers", "Systems"];
 
 const CATEGORY = {
   "aerostack-elite": "Stack Kits",
   "aerostack-pro": "Stack Kits",
-  "aerostack-basic": "Stack Kits",
-  "aerostack-basic-20": "Stack Kits",
   "aerostack-tilt": "Spacers",
   "aerostack-stack-reach": "Spacers",
   "aerostack-core-spacer": "Spacers",
-  "aerostack-infinity-plate": "Platforms",
+  "aerostack-basic": "Spacers",
+  "aerostack-basic-20": "Spacers",
+  "aerostack-infinity-plate": "Spacers",
   "aerostack-ultimate": "Systems"
+  // "aerostack-ultra" is the ULTRA hardcoded card below
 };
 
 export default function ProductsPage() {
@@ -68,10 +69,11 @@ export default function ProductsPage() {
             <ProductCard key={product.slug} product={product} />
           ))}
 
-          <Link
-            to="/tri-platform"
-            className="group relative flex flex-col overflow-hidden rounded-[1.75rem] border border-white/10 bg-gradient-to-br from-sky-500/15 via-blue-600/10 to-transparent p-4 transition duration-300 hover:-translate-y-1.5 hover:border-sky-400/50 hover:shadow-[0_24px_60px_-28px_rgba(56,189,248,0.45)]"
-          >
+          {(activeCategory === "All" || activeCategory === "Systems") && (
+            <Link
+              to="/tri-platform"
+              className="group relative flex flex-col overflow-hidden rounded-[1.75rem] border border-white/10 bg-gradient-to-br from-sky-500/15 via-blue-600/10 to-transparent p-4 transition duration-300 hover:-translate-y-1.5 hover:border-sky-400/50 hover:shadow-[0_24px_60px_-28px_rgba(56,189,248,0.45)]"
+            >
             <div className="relative mb-5 flex aspect-[4/3] items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-sky-500/20 to-blue-700/10">
               <span className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-200">
                 AeroStack ULTRA
@@ -106,6 +108,7 @@ export default function ProductsPage() {
               </span>
             </div>
           </Link>
+          )}
         </div>
       </main>
     </div>

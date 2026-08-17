@@ -32,7 +32,7 @@
         name: "AeroStack Elite",
         subtitle: "Balanced performance. Proven setup.",
         price: "315 EUR",
-        image: "/images/aerostack_pro.jpg",
+        image: "/images/elitekit.jpg",
         gallery: [
             "/images/aerostack_tilt.jpg"
         ],
@@ -195,7 +195,7 @@
         name: "AeroStack CORE Spacer",
         subtitle: "20 mm",
         price: "145 EUR",
-        image: "/images/aerostack_pro.jpg",
+        image: "/images/corespacer.jpg",
         description:
             "The AeroStack CORE Spacer provides 20 mm of stack height in a single spacer \u2013 twice the height of a standard 10 mm Canyon Gear Groove spacer. A clean and solid foundation for building a higher, more comfortable aero position.",
         extraText:
@@ -273,6 +273,7 @@
                 heading: "What's included?",
                 items: [
                     "1 \u00D7 AeroStack Infinity Plate",
+                    "PRO KIT (30+20 mm spacers)",
                     "1 \u00D7 AeroStack 15\u00B0 TILT Spacer",
                     "Required mounting hardware",
                     "Aerobars and arm cups shown in product photos are not included unless specifically stated."

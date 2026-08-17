@@ -94,7 +94,7 @@ export default function HomePage() {
                     </p>
 
                     <ul className="mt-6 space-y-3 text-sm text-white/75">
-                      {product.details.slice(0, 4).map((detail) => (
+                      {(product.details || []).slice(0, 4).map((detail) => (
                         <li key={detail} className="flex items-center gap-3">
                           <span className="h-1.5 w-1.5 rounded-full bg-sky-400" />
                           <span>{detail}</span>

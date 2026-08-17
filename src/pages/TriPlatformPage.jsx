@@ -11,7 +11,7 @@ export default function TriPlatformPage() {
       <main className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
         <section className="mx-auto max-w-5xl">
           <p className="text-sm uppercase tracking-[0.2em] text-sky-300">
-            AeroStack TRI Platform System
+            AeroStack ULTRA
           </p>
 
           <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
@@ -20,7 +20,7 @@ export default function TriPlatformPage() {
 
           <div className="mt-10 space-y-8 text-lg leading-8 text-white/75">
             <p>
-              The AeroStack TRI Platform System is our complete cockpit solution
+              The AeroStack ULTRA is our complete cockpit solution
               for Canyon riders who want more than the limitations of the
               standard Gear Groove system.
             </p>
@@ -45,7 +45,7 @@ export default function TriPlatformPage() {
           >
             <img
               src="/images/tri-platform-1.jpg"
-              alt="AeroStack TRI Platform"
+              alt="AeroStack ULTRA"
               className="w-full cursor-zoom-in object-cover"
             />
           </button>
@@ -90,7 +90,7 @@ export default function TriPlatformPage() {
               </p>
 
               <p>
-                The TRI Platform Kit works seamlessly with spacers and
+                The AeroStack ULTRA kit works seamlessly with spacers and
                 components within the AeroStack Labs ecosystem, giving you a
                 modular system that grows with your needs.
               </p>
@@ -117,7 +117,7 @@ export default function TriPlatformPage() {
           >
             <img
               src="/images/tri-platform-2.jpg"
-              alt="AeroStack TRI Platform"
+              alt="AeroStack ULTRA"
               className="w-full cursor-zoom-in object-cover"
             />
           </button>
@@ -131,7 +131,7 @@ export default function TriPlatformPage() {
           >
             <img
               src="/images/tri-platform-3.jpg"
-              alt="AeroStack TRI Platform"
+              alt="AeroStack ULTRA"
               className="w-full cursor-zoom-in object-cover"
             />
           </button>
@@ -192,11 +192,11 @@ export default function TriPlatformPage() {
             </p>
 
             <h2 className="mt-3 text-3xl font-semibold tracking-tight">
-                530 EUR
+                540 EUR
             </h2>
 
             <p className="mt-5 text-white/75">
-                Interested in AeroStack TRI Platform System? Contact us to get order
+                Interested in AeroStack ULTRA? Contact us to get order
                 information and setup guidance.
             </p>
 
@@ -216,7 +216,7 @@ export default function TriPlatformPage() {
         >
           <img
             src={selectedImage}
-            alt="Expanded AeroStack TRI Platform"
+            alt="Expanded AeroStack ULTRA"
             className="max-h-[90vh] max-w-[90vw] rounded-2xl"
             onClick={(event) => event.stopPropagation()}
           />

@@ -53,6 +53,12 @@ export default function ProductsPage() {
                       {product.salePrice || product.price}
                     </span>
 
+                    {product.availability && (
+                      <span className="mt-1 text-[10px] uppercase tracking-wide text-sky-300">
+                        {product.availability}
+                      </span>
+                    )}
+
                     {product.price === "Coming soon" && (
                       <span className="mt-1 text-[10px] uppercase tracking-wide text-sky-300">
                         Coming soon
@@ -75,6 +81,30 @@ export default function ProductsPage() {
                 </ul>
               </Link>
             ))}
+
+            <Link
+              to="/tri-platform"
+              className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-sky-400/10 to-blue-600/10 p-6 transition hover:-translate-y-1 hover:border-sky-400/40"
+            >
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <h3 className="text-2xl font-semibold tracking-tight">
+                    AeroStack ULTRA
+                  </h3>
+                  <p className="mt-1 text-sm text-sky-300">
+                    Complete cockpit solution
+                  </p>
+                </div>
+
+                <span className="rounded-full border border-white/10 bg-black/20 px-3 py-1 text-sm text-white/75">
+                  540 EUR
+                </span>
+              </div>
+
+              <p className="mt-5 text-base leading-7 text-white/70">
+                The AeroStack ULTRA System (previously TRI Platform System) for Canyon riders who want more than the limitations of the standard Gear Groove system - a modular cockpit that grows with your needs.
+              </p>
+            </Link>
         </div>
       </main>
     </div>

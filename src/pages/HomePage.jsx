@@ -75,6 +75,12 @@ export default function HomePage() {
                           {product.salePrice || product.price}
                         </span>
 
+                        {product.availability && (
+                          <span className="mt-1 text-[10px] uppercase tracking-wide text-sky-300">
+                            {product.availability}
+                          </span>
+                        )}
+
                         {product.price === "Coming soon" && (
                           <span className="mt-1 text-[10px] uppercase tracking-wide text-sky-300">
                             Coming soon

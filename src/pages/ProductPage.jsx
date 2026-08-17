@@ -94,6 +94,12 @@ export default function ProductPage() {
                                     Coming soon
                                 </div>
                             )}
+
+                            {product.availability && (
+                                <div className="text-sm font-medium uppercase tracking-wide text-sky-300">
+                                    {product.availability}
+                                </div>
+                            )}
                         </div>
 
                         <p className="mt-6 text-lg leading-8 text-white/75">
@@ -111,17 +117,33 @@ export default function ProductPage() {
                             </p>
                         )}
 
-                        <div className="mt-8">
-                            <h2 className="text-xl font-semibold">Details</h2>
-                            <ul className="mt-4 space-y-3 text-white/75">
-                                {product.details.map((detail) => (
-                                    <li key={detail} className="flex items-start gap-3">
-                                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-sky-400" />
-                                        <span>{detail}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
+                        {product.details?.length > 0 && (
+                            <div className="mt-8">
+                                <h2 className="text-xl font-semibold">Details</h2>
+                                <ul className="mt-4 space-y-3 text-white/75">
+                                    {product.details.map((detail) => (
+                                        <li key={detail} className="flex items-start gap-3">
+                                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-sky-400" />
+                                            <span>{detail}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        )}
+
+                        {product.sections?.map((section) => (
+                            <div key={section.heading} className="mt-8">
+                                <h2 className="text-xl font-semibold">{section.heading}</h2>
+                                <ul className="mt-4 space-y-3 text-white/75">
+                                    {section.items.map((item) => (
+                                        <li key={item} className="flex items-start gap-3">
+                                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-sky-400" />
+                                            <span>{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
 
                         <div className="mt-10">
                             <a

@@ -75,11 +75,10 @@ export default function ProductsPage() {
               className="group relative flex flex-col overflow-hidden rounded-[1.75rem] border border-white/10 bg-gradient-to-br from-sky-500/15 via-blue-600/10 to-transparent p-4 transition duration-300 hover:-translate-y-1.5 hover:border-sky-400/50 hover:shadow-[0_24px_60px_-28px_rgba(56,189,248,0.45)]"
             >
             <div className="relative mb-5">
-              <div className="grid grid-cols-3 gap-2">
+              <div className="grid grid-cols-2 gap-2">
                 {[
                   "/images/aerostackultra1.jpg",
-                  "/images/aerostackultra2.jpg",
-                  "/images/aerostackultra3.jpg"
+                  "/images/aerostackultra2.jpg"
                 ].map((img) => (
                   <img
                     key={img}

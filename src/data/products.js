@@ -153,13 +153,13 @@
     {
         slug: "aerostack-infinity-plate",
         name: "AeroStack Infinity Plate",
-        subtitle: "TRI Platform System foundation",
+        subtitle: "ULTRA & ULTIMATE Platform System foundation",
         price: "240 EUR",
         image: "/images/tri-platform-1.jpg",
         description:
-            "Build your aero cockpit your way. The AeroStack Infinity Plate is the foundation of the AeroStack TRI Platform System \u2013 now available separately. Designed for riders who want the freedom to build their own aero setup and use the aerobars that fit them best.",
+            "Build your aero cockpit your way. The AeroStack Infinity Plate is the foundation of the AeroStack ULTRA and ULTIMATE Platform System \u2013 now available separately. Designed for riders who want the freedom to build their own aero setup and use the aerobars that fit them best.",
         extraText:
-            "The AeroStack Infinity Plate is the foundation of our AeroStack TRI Platform System \u2013 and is now available as a standalone product for riders who want to build their own custom aero cockpit.\n\nInstead of being limited to one specific aerobar configuration, the Infinity Plate gives you the freedom to create a setup around your position, your preferred aerobars and your riding style.\n\nOriginally developed as the core mounting platform of our complete TRI Platform System, the Infinity Plate provides a solid and versatile base for riders who already have their own stack solution or simply want to take their cockpit customization further.\n\nNeed help figuring out whether the Infinity Plate will work with your planned cockpit setup? Contact us before ordering. Send us a photo of your current cockpit and tell us which aerobars you want to use \u2013 we'll help you determine the right configuration.\n\nBuild your aero position your way. Your fit. Your aerobars. Your system. No limitations.",
+            "Now available as a standalone product for riders who want to build their own custom aero cockpit.\n\nInstead of being limited to one specific aerobar configuration, the Infinity Plate gives you the freedom to create a setup around your position, your preferred aerobars and your riding style.\n\nOriginally developed as the core mounting platform of our complete ULTRA and ULTIMATE Platform System, the Infinity Plate provides a solid and versatile base for riders who already have their own stack solution or simply want to take their cockpit customization further.\n\nNeed help figuring out whether the Infinity Plate will work with your planned cockpit setup? Contact us before ordering. Send us a photo of your current cockpit and tell us which aerobars you want to use \u2013 we'll help you determine the right configuration.\n\nBuild your aero position your way. Your fit. Your aerobars. Your system. No limitations.",
         sections: [
             {
                 heading: "Why Infinity Plate?",

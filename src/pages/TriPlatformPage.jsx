@@ -4,8 +4,7 @@ import Navbar from "../components/Navbar";
 
 const ULTRA_GALLERY = [
   "/images/aerostackultra1.jpg",
-  "/images/aerostackultra2.jpg",
-  "/images/aerostackultra3.jpg"
+  "/images/aerostackultra2.jpg"
 ];
 
 const DIFFERENT = [

@@ -13,16 +13,16 @@ export default function Navbar() {
         
         {/* LOGO */}
         <Link to="/" className="flex items-center gap-4" onClick={closeMenu}>
-          <div className="relative flex h-24 w-24 items-center justify-center">
-            <div className="absolute -inset-3 rounded-2xl bg-gradient-to-br from-sky-400/30 to-blue-600/20 blur-md" />
-
-            <div className="relative flex h-24 w-24 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-neutral-600 shadow-lg">
+          <div className="relative">
+            <div className="flex h-16 w-24 items-center justify-center rounded-xl border border-white/10 bg-white/5 px-2 shadow-sm">
               <img
                 src={logo}
                 alt="AeroStack Labs"
-                className="h-full w-full object-contain scale-[2]"
+                className="max-h-full w-full object-contain"
               />
             </div>
+
+            <div className="absolute -inset-2 rounded-2xl bg-gradient-to-br from-sky-400/25 to-blue-600/15 blur-lg" />
           </div>
 
           <div>
